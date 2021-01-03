@@ -1,0 +1,109 @@
+HTML allows for making 3 types of lists:
+Ordered list
+Unordered list
+Definitions list
+
+Ordered list
+An ordered list is a list with numbered items. 
+<ol> represents an ordered list of items, rendered as a numbered list.
+
+A list item can be specified using <li>, which stands for list item.
+
+<ol>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+
+Ordered lists are displayed with a preceding numbering, which can be of any form, like numerals, letters,
+or Romans numerals, and even simple bullets.
+
+The <ol> tag has useful attributes:
+type: 
+indicates the numbering type. 
+1 indicates numbers (default)
+a indicates lowercase letters
+A indicates uppercase letters
+i indicates lowercase Roman numerals
+I indicates uppercase Roman numerals
+
+start: 
+indicates the start value for numbering the list items. 
+
+reversed:
+a boolean attribute that specifies that the items of the list are in reversed order.
+
+Unordered list
+
+Look similar to ordered lists, there is just no ordering, and only bullet-like symbols.
+Specifying them is also the same as like ordered lists.
+Instead of <ol> you use <ul>.
+
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+The <ul> tag has useful properties:
+type:
+circle
+disc
+square
+
+
+Definition lists
+Used to create a glossary or to display a list of key-value pairs (much like a glossary 8-) !)
+<dl> represents a definition list and is used to enclose a list of groups of terms and descriptions.
+
+Terms are enclosed in <dt> tag, which means definition term.
+Definitions are enclosed in <dd> tags.
+
+So:
+	<dl>
+		<dt>
+			Hoofdstuk 1:
+		</dt>
+		<dd>
+			Pindakaas
+		</dd>
+		<dt>
+			Hoofdstuk 2:
+		</dt>
+		<dd>
+			Hagelslag
+		</dd>
+	</dl>
+
+<dl>
+	<dt>HTML</dt>
+	<dd>
+		The standard markup language for
+		creating web pages and web applications.
+	</dd>
+	<!-- Other terms and descriptions -->
+</dl>
+
+You can also write multiple terms with single definition, single term with my multiple definitions or multiple
+terms with multiple definitions.
+
+
+
+## THE CHALLENGE
+
+In your HTML document create three lists:
+
+1. ordered list with 3 items
+2. unordered list with 3 items
+3. definition list with 2 pairs of term and definition
+
+The content of list items is up to you.
+
+If you've already solved this task, just check your solution with
+learnyouhtml verify.
+
+
+# Post completion feedback
+
+There are cases when it is not enough to summarize information in a simple list. 
+That is where tables come in to play. See the next exercise.

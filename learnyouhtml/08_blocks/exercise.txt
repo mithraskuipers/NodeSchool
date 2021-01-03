@@ -1,0 +1,173 @@
+<div> tag is the generic container for flow content and does not inherently represent anything.
+It is used to group elements for purposes such as styling, marking a section of a document in a different
+language, etc.
+
+<div>
+	<p>Any kind of content here. Such as
+	&lt;p&gt;,&lt;table&gt;. You name it!</p>
+</div>
+
+
+Semantic elements
+Consider this page layout:
+
+╔═════════════════════════════════════════════════════════╗
+║ <header>        ┌─────────────────────────────────────┐ ║
+║                 │ <nav>                               │ ║
+║                 │                      (3 menu items) │ ║
+║                 └─────────────────────────────────────┘ ║
+╠═════════════════════════════════════════════════════════╣
+║ <main>                                                  ║
+║┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓┏━━━━━━━━━━━━━━━━━━━━━━━┓║
+║┃ <article>                           ┃┃ <aside>         ┃║
+║┃┌───────────────────────────────────┐┃┃                 ┃║
+║┃│ <section>                         │┃┃ (3 menu items)  ┃║
+║┃│                                   │┃┃                 ┃║
+║┃│ (Heading 1)                       │┃┃                 ┃║
+║┃│                                   │┃┃                 ┃║
+║┃│ (A paragraph of text.)            │┃┃                 ┃║
+║┃└───────────────────────────────────┘┃┃                 ┃║
+║┃┌───────────────────────────────────┐┃┃                 ┃║
+║┃│ <section>                         │┃┃                 ┃║
+║┃│                                   │┃┃                 ┃║
+║┃│ (Heading 2)                       │┃┃                 ┃║
+║┃│                                   │┃┃                 ┃║
+║┃│ (A paragraph of text.)            │┃┃                 ┃║
+║┃│                                   │┃┃                 ┃║
+║┃└───────────────────────────────────┘┃┃                 ┃║
+║┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛┗━━━━━━━━━━━━━━━━━━━━━━━┛║
+╠═════════════════════════════════════════════════════════╣
+║ <footer>                                                ║
+║ (A paragraph with copyright message.)                   ║
+╚═════════════════════════════════════════════════════════╝
+
+This looks more like real site, doesn't it? This can be done with new
+fancy HTML5 tags: main, header, nav, footer, section, aside and article.
+
+HTML <main> element
+Represents the main content of the <body> of a document or application.
+Its content should be unique to the document, excluding any content that is
+repeated across a set of documents such as sidebars, navigation links, copyright information,
+site logos etc.
+
+Example:
+
+<main>
+<h1>Important article about something</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam, nisi ut aliquip ex ea commodo consequat.</p>
+<p>Duis aute irure dolor eu fugiat nulla pariatur.</p>
+</main>
+
+HTML <header> element
+Represents a group of introductory or navigational aids.
+May contain some heading elements, but also other elements like a log,
+a search form, etc.
+
+Example:
+
+<header>
+<h1>Main Page Title</h1>
+<img src="site-log.png" alt="Site logo">
+</header>
+
+HTML <nav> element
+Represents a section of a page that links to other pages or parts with the page: a section with 
+navigation links. A document may have several <nav> elements, such as one for site navivation
+and one for intra-page navigation.
+
+Example:
+
+<nav>
+<ul>
+<li>Home</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+</nav>
+
+HTML <footer> element
+Represents a footer for its nearest sectioning content or sectioning root element.
+It typically contains information about the author of the section, copyright data, or links to related
+documents.
+
+Example:
+
+<footer>
+Some copyright info or perhaps some author
+info for an &lt;article&gt;?
+</footer>
+
+HTML <section> element
+Represents a generic section of a document. That is, thematic grouping of content, 
+typically with a heading. Each <section> should be identified, typically by including a 
+heading (<h1>-<h6> element) as a child of the <section> element.
+
+Example:
+
+<section>
+<h1>Heading</h1>
+<p>Bunch of awesome content</p>
+</section>
+
+HTML <aside> element
+Represents a section of a document with content connected tangentially to the main content 
+of the document (often presented as a sidebar).
+
+Example:
+
+<aside>
+<!-- aside content -->
+</aside>
+
+HTML <article> element
+
+Represents a self-contained composition in a document, page, application, or site, 
+which is intended to be independently distributable or reusable: 
+a forum post, a magazine or newspaper article, or a blog entry.
+
+Example:
+
+<article>
+<!-- content of article goes here -->
+</article>
+
+## THE CHALLENGE
+
+Here you have a layout:
+
+╔═════════════════════════════════════════════════════════╗
+║ <header>        ┌─────────────────────────────────────┐ ║
+║                 │ <nav>                               │ ║
+║                 │                      (3 menu items) │ ║
+║                 └─────────────────────────────────────┘ ║
+╠═════════════════════════════════════════════════════════╣
+║ <main>                                                  ║
+║┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓┏━━━━━━━━━━━━━━━━━━━━━━━┓║
+║┃ <article>                           ┃┃ <aside>         ┃║
+║┃┌───────────────────────────────────┐┃┃                 ┃║
+║┃│ <section>                         │┃┃ (3 menu items)  ┃║
+║┃│                                   │┃┃                 ┃║
+║┃│ (Heading 1)                       │┃┃                 ┃║
+║┃│                                   │┃┃                 ┃║
+║┃│ (A paragraph of text.)            │┃┃                 ┃║
+║┃└───────────────────────────────────┘┃┃                 ┃║
+║┃┌───────────────────────────────────┐┃┃                 ┃║
+║┃│ <section>                         │┃┃                 ┃║
+║┃│                                   │┃┃                 ┃║
+║┃│ (Heading 2)                       │┃┃                 ┃║
+║┃│                                   │┃┃                 ┃║
+║┃│ (A paragraph of text.)            │┃┃                 ┃║
+║┃│                                   │┃┃                 ┃║
+║┃└───────────────────────────────────┘┃┃                 ┃║
+║┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛┗━━━━━━━━━━━━━━━━━━━━━━━┛║
+╠═════════════════════════════════════════════════════════╣
+║ <footer>                                                ║
+║ (A paragraph with copyright message.)                   ║
+╚═════════════════════════════════════════════════════════╝
+
+
+Please, write corresponding markup for this layout and check your document
+with learnyouhtml verify.

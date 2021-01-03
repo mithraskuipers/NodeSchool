@@ -1,0 +1,61 @@
+Bold
+<b> bold text
+<strong> highlights the tagged text (gewoon bold hier...)
+
+Italics
+<em> emotional highlights (gewoon italics hier...)
+<i> italics
+
+<sup> upper index
+<sub> lower index
+
+Grouping inline elements
+<span> is a generic inline container for phrasing content. Used to group ements for styling purposes.
+Should only be used when no other semantic element is appropriate.
+
+Pitfalls
+html ignores spaces and hyphenation in text and words.
+All words are written entirely without splitting them.
+
+Text takes up the whole width of the browser window. 
+If you write 1 long line in the HTML code then in the browser this text
+will be formatted such that the text will fit the whole width of the window.
+
+If the text is wider than the browser's window, then a horizontal scroll bar will appear.
+
+HTML also does not allow for special characters in the code.
+You can use special characters with special character entity references.
+
+& quot double quotation mark, "
+& amp ampersand, &
+& apos apostrophe, '
+& lt less than sign, <
+&gt greater than sign, >
+
+
+## THE CHALLENGE
+
+In this exercise you need to create 5 paragraphs of any text and use
+<strong>, <em>, <sup>, <sub> and <span> tag in these paragraphs, one tag
+per paragraph.
+
+If you did this, check your solution with learnyouhtml verify.
+
+
+# Post completion
+
+ ```html <!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inline tags</title>
+  </head>
+  <body>
+    <p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit</p>
+    <p>Lorem ipsum <em>dolor sit amet</em>, consectetur adipisicing elit</p>
+    <p>Lorem ipsum <sup>dolor sit amet</sup>, consectetur adipisicing elit</p>
+    <p>Lorem ipsum <sub>dolor sit amet</sub>, consectetur adipisicing elit</p>
+    <p>Lorem ipsum <span>dolor sit amet</span>, consectetur adipisicing elit</p>
+  </body>
+</html>

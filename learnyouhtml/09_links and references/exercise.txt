@@ -1,0 +1,36 @@
+Links are the basis of hypertext documents and allow you to move from 1 web page to another.
+To create a link you need to tell the browser what the link is and the address of the document
+to which you want to link. Both actions are done using the <a> tag, which stands for "anchor".
+
+<a href = "https://google.com/">Google</a>
+See that href is an attribute of the <a> tag? 
+That attribute contains a URL or URL fragment that the hyperlink points to.
+
+<a> also has other attributes such as:
+
+download: instructs browsers to download a URL instead of navigating to it.
+target: specifies where to display the linked URL. Is it a browsing context? tab? window?
+
+You can also put an image inside of a link, so you get an clickable image like this:
+
+<a href="https://google.com" target="_blank">
+	<img src="path/to/google-logo.png" alt="Google logo" />
+</a>
+
+Here we define a link to Google's main page using an image. 
+
+
+To open a link in a new window:
+target = "_blank"
+
+To open a link to an emailaddress in the user's email program:
+mailto:
+<a href = "mailto:mithraskuipers@gmail.com">Send email to Mithras Kuipers</a>
+
+## THE CHALLENGE
+
+In this exercise you have to create a clickable image (link with image).
+Use any image and any link you like.
+
+Verify your document with learnyouhtml verify as soon as you solve the
+task.

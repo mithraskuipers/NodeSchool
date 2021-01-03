@@ -1,0 +1,49 @@
+HTML knows 6 levels of heading.
+
+<h1>
+...
+<h6>
+
+Why use them?
+Show the importance of a section.
+The higher the header level, the larger the font size.
+
+Heading information can be user by user agents to construct a table of contents for a document automatically.
+Avoid skipping heading levels. Always start from <h1>, contuining upwards.
+
+Web pages uses headings from the 1st to the 3rd level. It rarely occurs you use headers of a lower level.
+
+## THE CHALLENGE
+
+You know how to create heading and paragraphs. Please, create a document
+with these structure:
+
+─────────────────────────────────────────────────────────────────────────────
+
+# Heading elements
+
+## Summary
+
+Some text here...
+
+## Examples
+
+### Example 1
+
+Some text here...
+
+### Example 2
+
+Some text here...
+
+## See also
+
+Some text here...
+
+─────────────────────────────────────────────────────────────────────────────
+Above amount of #s indicates of heading's level. When you finish, don't
+forget to check your solution with learnyouhtml verify.
+
+# Post completion feedback
+
+What if you want to create a ordered or unordered list? Check out the next exercise.

@@ -1,0 +1,68 @@
+You can add special resources to your page, like styles or scripts.
+
+Styles
+A web page can be stylized using CSS stylesheets.
+CSS or Cascading Style Sheets is a style sheet language used for describing the presentation of a document
+written in HTML.
+
+You can include CSS on your page with <style> tag, used to contain style information for a (part of a) document.
+By default the style instructions that are written inside that eement are expected to be CSS.
+
+Example of <style> tag
+
+<style type = "text/css">
+body {
+	color: red;
+}
+</style>
+
+Another way to inject styles in your web page is to link a styles file using <link> tag. 
+The <link> element specifies relationships between the current document and an external resource.
+
+<link> important attributes:
+href: specifies the URL of the linked resource. Can be absolute or relative.
+rel: names a relationship of the linked document to the current document.
+
+To include a stylesheet in a page, use the following syntax:
+
+<link href = "style.css" rel = "stylesheet">
+It is better to include styles in the <head> element.
+
+
+
+Scripts
+Besides styles, you can also include some JavaScript logic in an HTML document. 
+This is where the <script> tag comes into play.
+
+<script> is used to embed or reference an exectuable script.
+<script> important attributes:
+src: specifies the URI of an external script. Can be used as an alternative to embedding
+	a script directly within a document. If a script element has src attribute specified it should
+	not have a script embedded inside its tags.
+type: specifies the scripting language of code embedded within a script element or referenced via 
+	the element's src attribute.
+async: set this Boolean attribute to indicate that the browser should, if possible, execute the
+	script asynchronously.
+defer:	this Boolean attribute is set to indicate to a browser that the script is meant to be executed after
+	the document has been parsed.
+
+Example of an inline script:
+<script>
+	console.log("Hello, world!");
+</script>
+
+Reference script in external file:
+<script src = "javascript.js"></script>
+
+It is better to include scripts before closing of <body> element.
+
+
+
+## THE CHALLENGE
+
+Create a web page with one inline style, one linked stylesheet and one
+inline script or one referenced script.
+
+After all, verify your document with learnyouhtml verify when you get a
+solution.
+

@@ -1,0 +1,73 @@
+In HTML you create a table with the <table> tag.
+Rows are created with <tr> (= table row) and columns <tcd> (= table data)
+
+For example
+
+<table>
+<tr>
+	<td>1.1</td>
+	<td>1.2</td>
+</tr>
+<tr>
+	<td>2.1</td>
+	<td>2.2</td>
+</tr>
+</table>
+
+You can add a heading row using <th> (= table head) tag.
+
+Important:
+The number of table headers determine the number of columns there will be, in a way...
+I can create a table with 3 table headers, but actually consisting of a 2x2 grid.
+We will then have a third flying table header to the right of the 2nd table header 
+(which sits correctly above column 2).
+
+<p>Simple table with header</p>
+	<table>
+	<tr>
+		<th>First name</th>
+		<th>Last name</th>
+	</tr>
+	<tr>
+		<td>John</td>
+		<td>Doe</td>
+	</tr>
+	<tr>
+		<td>Jane</td>
+		<td>Doe</td>
+	</tr>
+</table>
+
+
+## THE CHALLENGE
+
+Create this table:
+
+╔══════════╦══════════╦══════════╗
+║  Europe  ║   Asia   ║  Africa  ║
+╠══════════╬══════════╬══════════╣
+║ Ukraine  ║ China    ║ Egypt    ║
+╠══════════╬══════════╬══════════╣
+║ Poland   ║ India    ║ Kenya    ║
+╠══════════╬══════════╬══════════╣
+║ Italy    ║ Thailand ║ Sudan    ║
+╚══════════╩══════════╩══════════╝
+
+Above, first row is a heading row, so you should use <th> tag.
+
+After all, check your document with learnyouhtml verify.
+
+
+# Post completion feedback
+
+Here are few important notes about tables:
+
+» You can put one table in a cell of other table.
+» The table dimensions are not set initially. They are calculated based                                            
+on the contents of the cells.
+» If the table is given its width in percent or pixels, then the contents                                          
+of the table are adjusted to the specified sizes.
+» Browser doesn't display tables until they are loaded. That's because                                             
+browser needs to calculate table's dimensions, before displaying.
+
+In following exercise we will consider block tags and their semantic.

@@ -1,0 +1,43 @@
+<!--
+What is HTML?
+HTML or HyperText Markup Language is a markup language for creating webpages.
+HTML is used to mark and describe each of the kinds of contents that HTML accepts
+(e.g. writing, links, pictures, sound, video) so the web browser can how them correctly.
+
+It can also be used to add meta information to a webpage, which is information about the web page
+(e.g. the person who made it). It is usually not shows by web browsers.
+
+Why learn HTML?
+It is the cornerstone of web and is what you see in your browser everytime you open a site.
+When working in the web development area, you definitely need to know what is HTML, how to read it
+and how to use it.
+
+How to use this workshopper?
+This workshoppper will guide you through the simple exercises which explain the core principles of HTML.
+In most cases it is enough to only use 3 commands:
+
+Serve a local server
+learnyouhtml run <file_name>.html
+
+Gives preview of server of <file_name>.html
+http://localhost:3000/
+
+Verify your file
+learnyouhtml verift <file_name>.html
+
+Help message
+learnyouhtml help
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<!--Here is a head-->
+<meta charset = "utf-8">  <!--Purpose?-->
+<title>Hello, world!</title>
+</head>
+<body>
+<!--Here is a body-->
+here is a body
+</body>
+</html>

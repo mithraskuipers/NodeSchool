@@ -1,0 +1,57 @@
+Tag attributes extend the ability of tags and provide flexible control over a variety of options
+for displaying elements or configuring their behavior. There are many attributes for different purposes,
+such as color, size, address.
+
+An attribute can be specified like this:
+
+Fully written
+
+<tag attribute1 = "value1" attribute2 = "value2">some text</tag>
+
+Written with self-closing tag
+<tag attribute1 = "value1" attribute2 = "value2">
+
+The HTML specification mandates that all values of attributes are wrapped in double quotes (attribute = "value")
+or single quotes (attribute = 'value'). Omitting these quotes do not cause errors, because browsers are smart.
+But can lead to problems if you try to define a value with spaces and don't wrap this value in quotes, such as:
+
+<tag attribute="value with spaces"></tag> <- here "value with spaces" will be considered a value which is good!
+<tag attribute=value with spaces></tag>  <- here only "value" will be considered a value
+
+If you do not specify an attribute (means not giving attribute value), 
+then the browser will use the default values for that attribute.
+
+The order of the attributes does not matter.
+Each attribute requires a specific type o value (text, number, path to file, etc.)
+
+
+## THE CHALLENGE
+
+You're already familiar with the <img> tag from the previous exercise.
+This tag embeds an image in the page. This tag has a few important
+attributes:
+
+» src - the image URL. This attribute is mandatory for the <img> element.
+» alt - this attribute defines the alternative text describing the image.                                         
+ Users will see this text displayed if the image URL is wrong or if the                                          
+ image is not yet downloaded.
+» height - the intrinsic height of the image in pixels.
+» width - the intrinsic width of the image in pixels.
+
+You need to create an HTML document with an image. Feel free to set any
+values for src and alt attributes.
+
+If you did this, check your solution with learnyouhtml verify.
+
+
+# Post completion feedback
+
+Next we will learn inline tags, which are usually used for styling text.
+
+# Own notes
+
+Place img tag in body tags.
+<img 
+src = "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/EricCartman.png/220px-EricCartman.png"
+alt = "Cartman picture"
+</img>

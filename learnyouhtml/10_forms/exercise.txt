@@ -1,0 +1,48 @@
+Now we learn how to make sign-up pages with input fields for email or username and password.
+
+You need to start from <form> element, which represents a document section that contains interactive
+controls to submit information to a web server.
+
+<form> has many attributes, the most important ones are:
+
+action: the URI of a program that processes the form information.
+method: the HTTP method that the browser uses to submit the form.
+	possible values are: 
+		post (which corresponds to the HTTP POST method)
+		get (which corresponds to the HTTP GET method)
+		
+name: the name of the form. This must be unique among the forms in a document.
+
+
+Now that you know what <form> is, you also need to know what <input> is.
+<input> is the element used to create interactive controls for web-based forms in
+order to accept data from the user. 
+
+How an <input> works depends on the value of its type attribute.
+
+
+
+
+type attribute has many values, the most important ones are:
+
+text: a single-line text file. Line-breaks are autom. removed.
+button: a push button with no default behavior.
+checkbox: a check box. You must define the value attribute to indicate whether this item is selected by default.
+file: lets user select a file.
+password: a single-line text field whose value is obscured.
+radio: a radio button. You must define the value attribute to indicate whether this item is selected by default.
+submit: a button that submits the form.
+
+
+# Eigen toevoeging (want foutje in workshopper)
+De submit knop gemaakt met de <button> tag, met als type "submit".
+
+
+
+## THE CHALLENGE
+
+Create a form with two inputs (for login and password) and a submit
+button.
+
+Verify your document with learnyouhtml verify when you get a solution.
+
